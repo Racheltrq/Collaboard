@@ -6,38 +6,36 @@ function Login(){
 			<h1 className = "header"> Welcome!</h1>
 
 			<div className = "login" style = {{float: 'left'}}>
-				Login:
+				<h2>Login:</h2>
 				<form>
 				  <label>
-				    Username:
+				    Username: 
 				    <input type="text" name="usr" />
+				    <br />
 				  </label>
-				</form>
 
-				<form>
 				  <label>
-				    Password:
+				    Password: 
 				    <input type="text" name="psw" />
 				  </label>
-				  <input type="submit" value="Submit" />
+				  <input type="submit" value="Submit" name = "login"/>
 				</form>
 			</div>
 
 			<div className = "login" style = {{float: 'left'}}>
-				Sign up:
+				<h2>Sign up:</h2>
 				<form>
 				  <label>
-				    Username:
+				    Username: 
 				    <input type="text" name="usr" />
+				    <br />
 				  </label>
-				</form>
 
-				<form>
 				  <label>
-				    Password:
+				    Password: 
 				    <input type="text" name="psw" />
 				  </label>
-				  <input type="submit" value="Submit" />
+				  <input type="submit" value="Submit" name = "login"/>
 				</form>
 			</div>
 
