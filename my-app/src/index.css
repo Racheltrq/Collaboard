@@ -1,17 +1,15 @@
 body{
-	margin: 5;
-	background-color: whitesmoke;
+	margin: 10;
+	background-color: LightSteelBlue;
 }
 
 .header{
-	color: blue;
+	color: Black;
 }
 
 .login{
-	width: 50%;
+	width: 40%;
 	height: 100%;
-	border: 15px black;
-  	padding: 50px;
-  	margin: 20px;
+
 }
 

@@ -23,7 +23,7 @@ function Login(){
 				</form>
 			</div>
 
-			<div className = "login">
+			<div className = "login" style = {{float: 'left'}}>
 				Sign up:
 				<form>
 				  <label>
