@@ -1,10 +1,10 @@
 import React from "react";
 
-class Login extends React.Component{
+class Signup extends React.Component{
 	render(){
 		return(
 			<div className = "login" style = {{float: 'left'}}>
-				<h2>Sign up:</h2>
+				<h2>Login:</h2>
 				<form>
 				  <label>
 				    Username: 
@@ -24,4 +24,4 @@ class Login extends React.Component{
 	}
 }
 
-export default Login
+export default Signup
