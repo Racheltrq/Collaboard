@@ -1,8 +1,11 @@
 import React from "react";
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Link, Redireact} from 'react-router-dom';
 import Route from "react-router-dom/Route"
 import Login from "./login"
-import Signup from "./signup"
+import Home from "./home"
+
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
 
 class App extends React.Component{
 
@@ -11,11 +14,10 @@ class App extends React.Component{
 	return(
 		<BrowserRouter>
 		<div>
-			<h1 className = "header"> Welcome!</h1>
-
-			<Login />
-
-			<Signup />
+			
+			
+			<Route path = "/" exact component = {Login} />
+			<Route path = "/home" exact component = {Home} />
 
 
 		</div>
