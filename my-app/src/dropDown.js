@@ -30,8 +30,8 @@ showDropdownMenu(event) {
 
   render() {
     return (
-        <div  className="dropdown" style = {{textAlign: 'center',width:"100px", marginTop: 8}} >
-         <div className="button" onClick={this.showDropdownMenu}> My Setting </div>
+        <div  className="dropdown" style = {{textAlign: 'center',width:"40px", marginRight: 30, marginTop: 1}} >
+         <div className="button" class="btn btn-default dropdown-toggle" onClick={this.showDropdownMenu} > New </div>
 
           { this.state.displayMenu ? (
           <ul>
