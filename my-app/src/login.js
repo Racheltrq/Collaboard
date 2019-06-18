@@ -13,20 +13,20 @@ class Login extends React.Component{
 				<h1 className = "header" class="font-italic" style = {{fontSize:80}}> Welcome to Collaboard!</h1>
 				<div className = "login" style = {{float: 'left', marginTop: 30}}>
 					<h2>Sign up:</h2>
-					<form action = "/home">
+					<form action = "/">
 					  <label class = "row" style = {{marginLeft: 5}}>
-					    Username: 
+					    <p style = {{marginTop: 12}}>Username: </p>
 					    <input type="text" name="usr"/>
 					    <br />
 					  </label>
 
 					  <label class = "row" style = {{marginLeft: 5}}>
-					    Password: 
+					    <p style = {{marginTop: 12}}>Password: </p>
 					    <input type="text" name="psw" />
 					  </label>
 
 					  <label class = "row" style = {{marginLeft: 5}}>
-					    Comfirm your password: 
+					  	<p style = {{marginTop: 12}}>Comfirm your password: </p>
 					    <input type="text" name="psw" />
 					  </label>
 
@@ -36,15 +36,15 @@ class Login extends React.Component{
 
 				<div className = "login" style = {{float: 'left', marginTop: 35}}>
 					<h2>Login:</h2>
-					<form>
+					<form action = "/home">
 					  <label class = "row" style = {{marginLeft: 5}}>
-					    Username: 
+					    <p style = {{marginTop: 12}}>Username: </p>
 					    <input type="text" name="usr" />
 					    <br />
 					  </label>
 
 					  <label class = "row" style = {{marginLeft: 5}}>
-					    Password: 
+					    <p style = {{marginTop: 12}}>Password: </p>
 					    <input type="text" name="psw" />
 					  </label>
 					  <input type="submit" value="Submit" name = "login"/>

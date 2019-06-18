@@ -34,16 +34,16 @@ showDropdownMenu(event) {
          <div className="button" class="btn btn-default dropdown-toggle" onClick={this.showDropdownMenu} > New </div>
 
           { this.state.displayMenu ? (
-          <ul>
-         <li><a className="active" href="/home">Create file</a></li>
-         <li><a href="/home">Manage folder</a></li>
-         
-          </ul>
-        ):
-        (
-          null
-        )
-        }
+            <ul class="list-group" style = {{listStyleType: "none"}}>
+             <li><a class="dropdown-item list-group-item-action" href="/home" style = {{marginLeft: 0}}>Create file</a></li>
+             <li><a href="/home" class="dropdown-item list-group-item-action">Create folder</a></li>
+           
+            </ul>
+            ):
+            (
+              null
+            )
+          }
 
        </div>
 

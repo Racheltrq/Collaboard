@@ -2,8 +2,13 @@ import React from "react"
 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Dropdown from "./dropDown"
+import PopUp from "./popup"
 
 class Home extends React.Component{
+
+
+
+
 
 	render(){
 		return(
@@ -17,16 +22,15 @@ class Home extends React.Component{
 
 				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 				    <ul class="navbar-nav mr-auto">
+
 				      <li class="nav-item active">
 				        <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
 				      </li>
 
-
-				      
 				      <Dropdown />
 
-					  <li class="nav-item active">
-				        <a class="nav-link" href="/home">Join <span class="sr-only">(current)</span></a>
+					  <li class="nav-item active" style = {{margin: 8}}>
+					  	<PopUp name = "Join" />
 				      </li>
 
 				      <li class="nav-item active">
@@ -45,6 +49,8 @@ class Home extends React.Component{
 				    
 				  </div>
 				</nav>
+
+
 			</div>
 
 			)
