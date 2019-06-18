@@ -3,6 +3,7 @@ import React from "react"
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Dropdown from "./dropDown"
 import PopUp from "./popup"
+import Help from "./help"
 
 class Home extends React.Component{
 
@@ -41,8 +42,8 @@ class Home extends React.Component{
 				        <a class="nav-link" href="/home">Starred <span class="sr-only">(current)</span></a>
 				      </li>
 
-				      <li class="nav-item active">
-				        <a class="nav-link" href="/home">Help <span class="sr-only">(current)</span></a>
+				      <li class="nav-item active" style = {{margin: 8}}>
+					  	<Help name = "Help" />
 				      </li>
 
 				    </ul>
