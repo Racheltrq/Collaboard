@@ -4,13 +4,11 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Dropdown from "./dropDown"
 import PopUp from "./popup"
 import Help from "./help"
+import drag from "./drag.png"
+import Grid from "./grid"
+
 
 class Home extends React.Component{
-
-
-
-
-
 	render(){
 		return(
 			<div>
@@ -50,6 +48,24 @@ class Home extends React.Component{
 				    
 				  </div>
 				</nav>
+
+				<h2 style = {{margin: 15}}>Recent files</h2>
+				<div class = "row" style = {{margin: 15}}>
+					<Grid pic = {drag}/>
+					<Grid pic = {drag}/>
+					<Grid pic = {drag}/>
+					<Grid pic = {drag}/>
+					<Grid pic = {drag}/>
+					<Grid pic = {drag}/>
+					<Grid pic = {drag}/>
+					<Grid pic = {drag}/>
+					<Grid pic = {drag}/>
+					<Grid pic = {drag}/>
+					<Grid pic = {drag}/>
+					<Grid pic = {drag}/>
+					<Grid pic = {drag}/>
+					<Grid pic = {drag}/>
+				</div>
 
 
 			</div>
