@@ -22,12 +22,12 @@ class Login extends React.Component{
 
 					  <label class = "row" style = {{marginLeft: 5}}>
 					    <p style = {{marginTop: 12}}>Password: </p>
-					    <input type="text" name="psw" />
+					    <input type="password" name="psw" style = {{width: 370, marginLeft: 10}}/>
 					  </label>
 
 					  <label class = "row" style = {{marginLeft: 5}}>
 					  	<p style = {{marginTop: 12}}>Comfirm your password: </p>
-					    <input type="text" name="psw" />
+					    <input type="password" name="psw" style = {{width: 370, marginLeft: 10}}/>
 					  </label>
 
 					  <input type="submit" value="Submit" name = "signup"/>
@@ -45,7 +45,7 @@ class Login extends React.Component{
 
 					  <label class = "row" style = {{marginLeft: 5}}>
 					    <p style = {{marginTop: 12}}>Password: </p>
-					    <input type="text" name="psw" />
+					    <input type="password" name="psw" style = {{width: 370, marginLeft: 10}}/>
 					  </label>
 					  <input type="submit" value="Submit" name = "login"/>
 					</form>
