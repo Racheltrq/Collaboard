@@ -7,8 +7,10 @@ import Help from "./help"
 import drag from "./drag.png"
 import Grid from "./grid"
 
+let folders = ["folder1", "folder2", "folder3"]
 
 class Home extends React.Component{
+
 	render(){
 		return(
 			<div>
@@ -26,17 +28,15 @@ class Home extends React.Component{
 				        <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
 				      </li>
 
-				      <Dropdown />
+				      <Dropdown title = "New" content = "none"/>
 
 					  <li class="nav-item active" style = {{margin: 8}}>
 					  	<PopUp name = "Join" />
 				      </li>
 
-				      <li class="nav-item active">
-				        <a class="nav-link" href="/home">Folders <span class="sr-only">(current)</span></a>
-				      </li>
+				      <Dropdown title = "Folders" content = {folders}/>
 
-				      <li class="nav-item active">
+				      <li class="nav-item active" style = {{marginLeft: 24}}>
 				        <a class="nav-link" href="/home">Starred <span class="sr-only">(current)</span></a>
 				      </li>
 

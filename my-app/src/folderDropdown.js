@@ -1,7 +1,7 @@
 import React from 'react';
 //import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
-class Dropdown extends React.Component {
+class folderDropdown extends React.Component {
 constructor(){
  super();
 
@@ -30,11 +30,11 @@ showDropdownMenu(event) {
 
   render() {
     return (
-        <div  className="dropdown-menu-left" style = {{textAlign: 'center',width:"40px", marginRight: 32, marginTop: 1}} >
-         <div className="button" class="btn btn-default dropdown-toggle" onClick={this.showDropdownMenu} > {this.props.title} </div>
 
-          { this.state.displayMenu && (this.props.content === "none") ? (
+        <div  className="dropdown" style = {{textAlign: 'center',width:"40px", marginRight: 30, marginTop: 1}} >
+         <div className="button" class="btn btn-default dropdown-toggle" onClick={this.showDropdownMenu} > Folders </div>
 
+          { this.state.displayMenu ? (
             <ul class="list-group" style = {{listStyleType: "none"}}>
              <li><a class="dropdown-item list-group-item-action" href="/home" style = {{marginLeft: 0}}>Create file</a></li>
              <li><a href="/home" class="dropdown-item list-group-item-action">Create folder</a></li>
@@ -42,9 +42,7 @@ showDropdownMenu(event) {
             </ul>
             ):
             (
-              <ul>
-              {this.state.displayMenu ? this.props.content.map(item => (<li key = {item} class="dropdown-item list-group-item-action" > {item}</li>)) : null}
-              </ul>
+              null
             )
           }
 
@@ -54,4 +52,4 @@ showDropdownMenu(event) {
   }
 }
 
-export default Dropdown;
+export default folderDropdown;
