@@ -4,8 +4,8 @@ import React from "react"
 class Grid extends React.Component{
 	render(){
 		return(
-			<div style = {{width: 206, height: 240, marginLeft: 30, marginBottom: 25, borderStyle: "solid"}}>
-				<img src = {this.props.pic} style = {{width: 200, height: 200}}/>
+			<div style = {{width: 206, height: 240, marginLeft: 30, marginBottom: 25, backgroundColor: "#EEDBD7", borderRadius: 3}}>
+				<img src = {this.props.pic} class="rounded mx-auto d-block" style = {{width: 200, height: 200, margin: 4}}/>
 				<p>Baby dragon image</p>
 			</div>
 			)

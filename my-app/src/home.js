@@ -6,6 +6,7 @@ import PopUp from "./popup"
 import Help from "./help"
 import drag from "./drag.png"
 import Grid from "./grid"
+import History from "./history"
 
 let folders = ["folder1", "folder2", "folder3"]
 
@@ -49,7 +50,25 @@ class Home extends React.Component{
 				  </div>
 				</nav>
 
-				<h2 style = {{margin: 15}}>Recent files</h2>
+				<div class = "row">
+					<h2 style = {{margin: 15, width: 1200}}>Recent files</h2>
+					<div class = "row" style = {{margin: 15, width: 200, height: 50}}>
+
+						<div class = "row" style = {{border: "solid", width: 45, height: 45, marginRight: 14}}>
+							<div style = {{width: 15, height: 15, marginLeft: 3, marginTop: 3, border: 'solid'}}/>
+							<div style = {{width: 15, height: 15, marginLeft: 2, marginTop: 3, border: 'solid'}}/>
+							<div style = {{width: 15, height: 15, marginLeft: 3, border: 'solid'}}/>
+							<div style = {{width: 15, height: 15, marginLeft: 2, border: 'solid'}}/>
+
+						</div>
+						<div class = "line" style = {{border: "solid", width: 45, height: 45, marginRight: 14}}>
+						<div style = {{width: 42, height: 35, borderBottom: 'solid', position: 'absolute'}}/>
+						</div>
+						
+						<History />
+					</div>
+				</div>
+
 				<div class = "row" style = {{margin: 15}}>
 					<Grid pic = {drag}/>
 					<Grid pic = {drag}/>
