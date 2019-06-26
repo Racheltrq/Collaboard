@@ -5,11 +5,24 @@ import "./index.css"
 
 
 class Login extends React.Component{
+	constructor(){
+		super()
+		this.state = {
+			data: null
+		}
+	}
+
+	componentDidMount() {
+	    fetch('https://swapi.co/api/people/1/')
+	      .then(response => response.text())
+	      .then(data => this.setState({data}));
+  	}
 
 
 	render(){
 		return(
 			<div>
+				
 				<h1 className = "header" class="font-italic" style = {{fontSize:80}}> Welcome to Collaboard!</h1>
 				<div className = "login" style = {{float: 'left', marginTop: 30}}>
 					<h2>Sign up:</h2>

@@ -11,6 +11,7 @@ import History from "./history"
 let folders = ["folder1", "folder2", "folder3"]
 
 class Home extends React.Component{
+	
 
 	render(){
 		return(
