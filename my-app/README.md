@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-Before running the project, you have to 'npm install reactjs-popup --save', 'npm install react-sketch --save'.
+Before running the project, you have to 'npm install reactjs-popup --save', 'npm install react-sketch --save', 'npm install react-chat-window'.
 
 In the project directory, you can run:
 
