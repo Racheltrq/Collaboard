@@ -2,24 +2,41 @@ import React from "react";
 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import "./index.css"
+import './setupProxy.js'
 
 
 class Login extends React.Component{
-	constructor(){
-		super()
-		this.state = {
-			data: null
-		}
-	}
+	constructor() {
+        super()
+        this.state = {
+            loading: false,
+            character: {}
+        }
+    }
+    
+    componentDidMount() {
+        this.setState({loading: true})
+        fetch("/users")
+            .then(response => response.json())
+            .then(data => {
+                this.setState({
+                    loading: false,
+                    character: data
+                })
+            })
+        
+    }
 
-	componentDidMount() {
-	    fetch('https://swapi.co/api/people/1/')
-	      .then(response => response.text())
-	      .then(data => this.setState({data}));
-  	}
-
-
+    
 	render(){
+		console.log("working...")
+		console.log(JSON.stringify(this.state.character))
+		const array = this.state.loading ? "loading..." : this.state.character
+		
+		var {status, character} = this.state
+		const temp = character.length === 0 ? "Array has no item in it" : character.length
+		const temp2 = character.constructor === Array ? "Is Array" : typeof character
+		
 		return(
 			<div>
 				
@@ -63,7 +80,28 @@ class Login extends React.Component{
 					  <input type="submit" value="Submit" name = "login"/>
 					</form>
 				</div>
+
+				<div>
+                	
+                	{temp}
+                	{temp2}
+                	{character.type}
+                	<ul>
+                		<li>List:</li>
+
+                		{character && Object.keys(character).map(user=>(
+                			
+                			
+                			<li key = {user.id}>Name: {user.type}</li>
+                			
+                			))}
+
+                	</ul>
+                </div>
 			</div>
+
+
+
 			)
 	}
 }
