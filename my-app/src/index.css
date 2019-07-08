@@ -28,14 +28,6 @@ input[type=submit] {
   cursor: pointer;
 }
 
-
-
-input[name = login]{
-	display: inline-block;
-}
-
-
-
 .login{
 	width: 50%;
 	height: 100%;
