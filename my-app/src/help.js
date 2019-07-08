@@ -6,7 +6,7 @@ class Help extends React.Component{
 	render(){
 		return(
 			<div>
-				<Popup trigger={<li className="button"> {this.props.name} </li>} modal>
+				  <Popup trigger={<li className="button"> {this.props.name} </li>} modal>
 				    
 				  	<div>
 				  		<h4>User Guide</h4>
@@ -18,7 +18,7 @@ class Help extends React.Component{
 							<li>Click one the files below to start editing!</li>
 						</ul>
 				  	</div>
-				</Popup>
+				  </Popup>
 			</div>
 
 			)
