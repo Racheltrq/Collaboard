@@ -1,5 +1,6 @@
 import React from "react";
 import Popup from "reactjs-popup";
+import './css/popup.css'
 
 
 class PopUp extends React.Component{
@@ -10,13 +11,13 @@ class PopUp extends React.Component{
 				    
 				  	<div>
 				  		<form action = "/home">
-					  <label class = "row" style = {{marginLeft: 5}}>
+					  <label class = "row">
 					    <p style = {{marginTop: 12}}>Room id: </p>
 					    <input type="text" name="usr" />
 					    <br />
 					  </label>
 
-					  <label class = "row" style = {{marginLeft: 5}}>
+					  <label class = "row">
 					    <p style = {{marginTop: 12}}>Password: </p>
 					    <input type="text" name="psw" />
 					  </label>
