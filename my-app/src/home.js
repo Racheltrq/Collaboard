@@ -1,6 +1,7 @@
 import React from "react"
 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import './css/home.css'
 import Dropdown from "./dropDown"
 import PopUp from "./popup"
 import Help from "./help"
@@ -32,17 +33,17 @@ class Home extends React.Component{
 
 				      <Dropdown title = "New" content = "none"/>
 
-					  <li class="nav-item active" style = {{margin: 8}}>
+					  <li class="nav-item active" id = 'navBarItemJoin'>
 					  	<PopUp name = "Join" />
 				      </li>
 
 				      <Dropdown title = "Folders" content = {folders}/>
 
-				      <li class="nav-item active" style = {{marginLeft: 24}}>
+				      <li class="nav-item active" id = 'navBarItemStarred'>
 				        <a class="nav-link" href="/home">Starred <span class="sr-only">(current)</span></a>
 				      </li>
 
-				      <li class="nav-item active" style = {{margin: 8}}>
+				      <li class="nav-item active" id = 'navBarItemHelp'>
 					  	<Help name = "Help" />
 				      </li>
 
@@ -52,25 +53,25 @@ class Home extends React.Component{
 				</nav>
 
 				<div class = "row">
-					<h2 style = {{margin: 15, width: 1200}}>Recent files</h2>
-					<div class = "row" style = {{margin: 15, width: 200, height: 50}}>
+					<h2 id = 'recentFiles'>Recent files</h2>
+					<div class = "row" id = 'upperRightButtons'>
 
-						<div class = "row" style = {{border: "solid", width: 45, height: 45, marginRight: 14}}>
-							<div style = {{width: 15, height: 15, marginLeft: 3, marginTop: 3, border: 'solid'}}/>
-							<div style = {{width: 15, height: 15, marginLeft: 2, marginTop: 3, border: 'solid'}}/>
-							<div style = {{width: 15, height: 15, marginLeft: 3, border: 'solid'}}/>
-							<div style = {{width: 15, height: 15, marginLeft: 2, border: 'solid'}}/>
+						<div class = "row" id = 'gridToListView'>
+							<div id = 'gridTopLeft'/>
+							<div id = 'gridTopRight'/>
+							<div id = 'gridBotLeft'/>
+							<div id = 'gridBotRight'/>
 
 						</div>
-						<div class = "line" style = {{border: "solid", width: 45, height: 45, marginRight: 14}}>
-						<div style = {{width: 42, height: 35, borderBottom: 'solid', position: 'absolute'}}/>
+						<div class = "line" id = 'gridToListView'>
+						<div id = 'description'/>
 						</div>
 						
 						<History />
 					</div>
 				</div>
 
-				<div class = "row" style = {{margin: 15}}>
+				<div class = "row" id = 'fileList'>
 					<Grid pic = {drag}/>
 					<Grid pic = {drag}/>
 					<Grid pic = {drag}/>

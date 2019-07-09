@@ -1,0 +1,66 @@
+#navBarItemJoin, #navBarItemHelp{
+    margin: 8px;
+}
+
+#navBarItemStarred{
+    margin-left: 24px;
+}
+
+#recentFiles{
+    margin: 20px;
+    width: 1200px;
+}
+
+#upperRightButtons{
+    margin: 15px;
+    width: 200px;
+    height: 50px;
+}
+
+#gridToListView{
+    border: solid;
+    width: 45px;
+    height: 45px;
+    margin-right: 14px;
+}
+
+#gridTopLeft{
+    width: 15px;
+    height: 15px;
+    margin-left: 3px;
+    margin-top: 3px;
+    border: solid;
+}
+
+#gridTopRight{
+    width: 15px;
+    height: 15px;
+    margin-left: 2px;
+    margin-top: 3px;
+    border: solid;
+}
+
+#gridBotLeft{
+    width: 15px;
+    height: 15px;
+    margin-left: 3px;
+    border: solid;
+}
+
+#gridBotRight{
+    width: 15px;
+    height: 15px;
+    margin-left: 2px;
+    border: solid;
+}
+
+#description{
+    width: 42px;
+    height: 35px;
+    border-bottom: solid;
+    position: absolute;
+}
+
+#fileList{
+    margin: 15px;
+}
