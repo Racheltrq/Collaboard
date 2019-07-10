@@ -14,7 +14,8 @@ class File extends React.Component{
 				<div id = 'filenameDiv'>
 					<h3 id = 'filename'>Filename</h3>
 				</div>
-				<SketchField width='1024px' height='680px' tool={Tools.Pencil} lineColor='black' lineWidth={3}  id = 'sketchField'/>
+				<div id = "spaceDiv"/>
+				<SketchField width='1024px' height='680px' tool={Tools.Pencil} lineColor='black' lineWidth={3} backgroundColor= 'white'/>
 				<Chat />
 			</div>
 			)
