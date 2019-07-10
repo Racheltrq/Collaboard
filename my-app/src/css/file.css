@@ -1,0 +1,13 @@
+#filenameDiv{
+    height: 70px;
+    background-color: white;
+}
+
+#filename{
+    margin-left: 15px;
+}
+
+#sketchField{
+    margin: 10px;
+    background-color: white;
+}
