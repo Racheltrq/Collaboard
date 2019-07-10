@@ -1,4 +1,5 @@
 import React from 'react';
+import './css/dropDown.css'
 //import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 class Dropdown extends React.Component {
@@ -30,13 +31,13 @@ showDropdownMenu(event) {
 
   render() {
     return (
-        <div  className="dropdown-menu-left" style = {{textAlign: 'center',width:"40px", marginRight: 32, marginTop: 1}} >
+        <div  className="dropdown-menu-left" id = 'dropDownMenuLeft'>
          <div className="button" class="btn btn-default dropdown-toggle" onClick={this.showDropdownMenu} > {this.props.title} </div>
 
           { this.state.displayMenu && (this.props.content === "none") ? (
 
-            <ul class="list-group" style = {{listStyleType: "none"}}>
-             <li><a class="dropdown-item list-group-item-action" href="/home" style = {{marginLeft: 0}}>Create file</a></li>
+            <ul class="list-group" id = 'listGroup'>
+             <li><a class="dropdown-item list-group-item-action" href="/home" id = 'dropDownItem'>Create file</a></li>
              <li><a href="/home" class="dropdown-item list-group-item-action">Create folder</a></li>
            
             </ul>
