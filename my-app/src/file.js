@@ -1,5 +1,6 @@
 import React from "react"
 import {SketchField, Tools} from 'react-sketch';
+import './css/file.css'
 
 import Chat from './chat'
 import 'react-sliding-pane/dist/react-sliding-pane.css';
