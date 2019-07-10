@@ -1,7 +1,7 @@
 import React from "react";
 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import "./index.css"
+import "./css/login.css"
 import './setupProxy.js'
 
 
@@ -40,42 +40,42 @@ class Login extends React.Component{
 		return(
 			<div>
 				
-				<h1 className = "header" class="font-italic" style = {{fontSize:80}}> Welcome to Collaboard!</h1>
-				<div className = "login" style = {{float: 'left', marginTop: 30}}>
+				<h1 className = "header" class="font-italic" id = 'welcome'> Welcome to Collaboard!</h1>
+				<div className = "login" id = 'signUp'>
 					<h2>Sign up:</h2>
 					<form action = "/">
-					  <label class = "row" style = {{marginLeft: 5}}>
-					    <p style = {{marginTop: 12}}>Username: </p>
+					  <label class = "row">
+					    <p>Username: </p>
 					    <input type="text" name="usr"/>
 					    <br />
 					  </label>
 
-					  <label class = "row" style = {{marginLeft: 5}}>
-					    <p style = {{marginTop: 12}}>Password: </p>
-					    <input type="password" name="psw" style = {{width: 370, marginLeft: 10}}/>
+					  <label class = "row">
+					    <p>Password: </p>
+					    <input type="password" name="psw"/>
 					  </label>
 
-					  <label class = "row" style = {{marginLeft: 5}}>
-					  	<p style = {{marginTop: 12}}>Comfirm your password: </p>
-					    <input type="password" name="psw" style = {{width: 370, marginLeft: 10}}/>
+					  <label class = "row">
+					  	<p>Comfirm your password: </p>
+					    <input type="password" name="psw"/>
 					  </label>
 
 					  <input type="submit" value="Submit" name = "signup"/>
 					</form>
 				</div>
 
-				<div className = "login" style = {{float: 'left', marginTop: 35}}>
+				<div className = "login" id = 'login'>
 					<h2>Login:</h2>
 					<form action = "/home">
-					  <label class = "row" style = {{marginLeft: 5}}>
-					    <p style = {{marginTop: 12}}>Username: </p>
+					  <label class = "row">
+					    <p>Username: </p>
 					    <input type="text" name="usr" />
 					    <br />
 					  </label>
 
-					  <label class = "row" style = {{marginLeft: 5}}>
-					    <p style = {{marginTop: 12}}>Password: </p>
-					    <input type="password" name="psw" style = {{width: 370, marginLeft: 10}}/>
+					  <label class = "row">
+					    <p>Password: </p>
+					    <input type="password" name="psw"/>
 					  </label>
 					  <input type="submit" value="Submit" name = "login"/>
 					</form>
