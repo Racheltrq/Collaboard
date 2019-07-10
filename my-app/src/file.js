@@ -1,9 +1,9 @@
 import React from "react"
 import {SketchField, Tools} from 'react-sketch';
-import './css/file.css'
+
 
 import Chat from './chat'
-import 'react-sliding-pane/dist/react-sliding-pane.css';
+import './css/file.css'
 
 class File extends React.Component{
 	
@@ -12,9 +12,10 @@ class File extends React.Component{
 		return(
 			<div>
 				<div id = 'filenameDiv'>
-					<h3 id = 'filename'>Filename</h3>
+					<h3 id = 'filenameHeader'>Filename</h3>
 				</div>
-				<SketchField width='1024px' height='680px' tool={Tools.Pencil} lineColor='black' lineWidth={3}  id = 'sketchField'/>
+				<div id = 'spaceDiv'/>
+				<SketchField width='1024px' height='680px' tool={Tools.Pencil} lineColor='black' lineWidth={3} backgroundColor = 'white'/>
 				<Chat />
 			</div>
 			)
