@@ -3,10 +3,11 @@
     background-color: white;
 }
 
-#filenameHeader{
+#filename{
     margin-left: 15px;
 }
 
-#spaceDiv{
+#sketchField{
     margin: 10px;
+    background-color: white;
 }
