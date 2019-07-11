@@ -6,22 +6,30 @@
     margin-left: 24px;
 }
 
+
+
 #recentFiles{
-    margin: 20px;
-    width: 1175px;
+    margin-top: 15px;
+    margin-right: 40px;
 }
 
 #upperRightButtons{
-    margin: 15px;
-    width: 200px;
+    margin-left: 20px;
+    margin-top: 15px;
+    width: 15%;
     height: 50px;
+    min-width: 220px;
+    position: relative;
+    float: right;
 }
 
 #gridToListView{
+    margin-left: 10px;
     border: solid;
     width: 45px;
     height: 45px;
     margin-right: 14px;
+    float: right;
 }
 
 #gridTopLeft{
@@ -58,9 +66,15 @@
     width: 42px;
     height: 35px;
     border-bottom: solid;
-    position: absolute;
+    float: right;
 }
 
 #fileList{
     margin: 15px;
 }
+
+#spaceDiv{
+    width: 1400px;
+    height: 80px;
+}
+

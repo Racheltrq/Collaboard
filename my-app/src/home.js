@@ -51,8 +51,8 @@ class Home extends React.Component{
 				  </div>
 				</nav>
 
-				<div class = "row">
-					<h2 id = 'recentFiles'>Recent files</h2>
+
+					<div className = "float-left" width = '400px' id = 'recentFiles'><h2>Recent files</h2></div>
 					<div class = "row" id = 'upperRightButtons'>
 
 						<div class = "row" id = 'gridToListView'>
@@ -68,7 +68,8 @@ class Home extends React.Component{
 						
 						<History />
 					</div>
-				</div>
+
+				<div id = 'spaceDiv'></div>
 
 				<div class = "row" id = 'fileList'>
 					<Grid pic = {drag}/>
