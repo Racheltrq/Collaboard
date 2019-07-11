@@ -11,9 +11,10 @@ class File extends React.Component{
 	render(){
 		return(
 			<div>
-				<div id = 'filenameDiv'>
-					<h3 id = 'filename'>Filename</h3>
-				</div>
+
+					<h1 id = 'filename'>Filename</h1>
+					<a href="/home" className="myButton">Home</a>
+				<div id = 'filenameDiv'/>
 				<div id = "spaceDiv"/>
 				<SketchField width='1024px' height='680px' tool={Tools.Pencil} lineColor='black' lineWidth={3} backgroundColor= 'white'/>
 				<Chat />
