@@ -69,7 +69,7 @@ class Home extends React.Component{
 						<History />
 					</div>
 
-				<div id = 'spaceDiv'></div>
+				<div id = 'spaceDivHome'></div>
 
 				<div class = "row" id = 'fileList'>
 					<Grid pic = {drag}/>
