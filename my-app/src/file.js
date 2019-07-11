@@ -16,7 +16,7 @@ class File extends React.Component{
 				<a href="/home" className="myButton">Home</a>
 				<div id = 'filenameDiv'/>
 				<div id = "spaceDiv"/>
-				<SketchField width='1024px' height='680px' tool={Tools.Pencil} lineColor='black' lineWidth={3} backgroundColor= 'white'/>
+				<SketchField width='1024px' height='2000px' tool={Tools.Pencil} lineColor='black' lineWidth={3} backgroundColor= 'white'/>
 				<img src = {voicePic} id = 'voiceButton'/>
 				<Chat />
 			</div>
