@@ -1,5 +1,14 @@
-const express = require('express')
-const app = express()
+const express = require('express');
+const app = express();
+const mysql = require('mysql');
+var conn = mysql.createConnection({
+	host : 'localhost',
+	user : 'root',
+	password : '979683',
+	database : 'Collaboard'
+});
+
+conn.connect();
 
 
 app.get("/", (req, res) => {
@@ -42,6 +51,16 @@ app.get("/users", (req, res) => {
   	res.send(st)
 	
 })
+
+app.get('/test', function(request, response){
+	conn.query('select * from Users', function(error, results){
+		if ( error ){
+			response.status(400).send('Error in database operation');
+		} else {
+			response.send(results);
+		}
+	});
+});
 
 app.listen(3003, ()=>{
 	console.log("Server is listening...")
