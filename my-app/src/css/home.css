@@ -1,9 +1,16 @@
+#navBarHome{
+    margin-left: 12px;
+}
+
 #navBarItemJoin, #navBarItemHelp{
-    margin: 8px;
+    margin-left: 12px;
+    margin-top: 8px;
+    margin-bottom: 6px;
 }
 
 #navBarItemStarred{
-    margin-left: 24px;
+    margin-left: 12px;
+    margin-right: 5px;
 }
 
 
