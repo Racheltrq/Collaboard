@@ -9,3 +9,7 @@ label{
 #submit{
 	min-width: 120px;
 }
+
+#popupJoinRoom{
+	cursor: pointer;
+}

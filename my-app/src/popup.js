@@ -7,7 +7,7 @@ class PopUp extends React.Component{
 	render(){
 		return(
 			<div>
-				<Popup trigger={<li className="button"> {this.props.name} </li>} modal>
+				<Popup trigger={<li className="button" id = "popupJoinRoom"> {this.props.name} </li>} modal>
 
 					<div>
 						<form action = "/home">
