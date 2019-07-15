@@ -12,16 +12,16 @@ class PopUp extends React.Component{
 				  	<div>
 				  		<form action = "/home">
 					  <label class = "row">
-					    <p style = {{marginTop: 12}}>Room id: </p>
+					    <p id = "input">Room id: </p>
 					    <input type="text" name="usr" />
 					    <br />
 					  </label>
 
 					  <label class = "row">
-					    <p style = {{marginTop: 12}}>Password: </p>
-					    <input type="text" name="psw" />
+					    <p id = "input">Password: </p>
+					    <input type="text" name="psw"/>
 					  </label>
-					  <input type="submit" value="Submit" name = "login"/>
+					  <input type="submit" value="Submit" name = "login" id = "submit"/>
 					</form>
 				  	</div>
 				  </Popup>

@@ -1,3 +1,11 @@
 label{
-	margin-left: 5
+	margin-left: 5px;
+}
+
+#input{
+	margin-top: 12px;
+}
+
+#submit{
+	min-width: 120px;
 }
