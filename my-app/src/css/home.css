@@ -38,6 +38,7 @@
     height: 45px;
     margin-right: 14px;
     float: right;
+    cursor: pointer;
 }
 
 #gridTopLeft{
@@ -75,6 +76,7 @@
     height: 35px;
     border-bottom: solid;
     float: right;
+    cursor: pointer;
 }
 
 #fileList{
