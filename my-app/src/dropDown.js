@@ -36,16 +36,16 @@ showDropdownMenu(event) {
 
           { this.state.displayMenu && (this.props.content === "none") ? (
 
-            <ul class="list-group" id = 'listGroup'>
-             <li><a class="dropdown-item list-group-item-action" href="/home" id = 'dropDownItem'>Create file</a></li>
-             <li><a href="/home" class="dropdown-item list-group-item-action">Create folder</a></li>
+            <div class="list-group" id = 'listGroup'>
+             <a class="dropdown-item list-group-item-action" href="/home" id = 'dropDownItem'>Create file</a>
+             <a href="/home" class="dropdown-item list-group-item-action">Create folder</a>
            
-            </ul>
+            </div>
             ):
             (
-              <ul>
-              {this.state.displayMenu ? this.props.content.map(item => (<li key = {item} class="dropdown-item list-group-item-action" > {item}</li>)) : null}
-              </ul>
+              <div>
+              {this.state.displayMenu ? this.props.content.map(item => (<a key = {item} class="dropdown-item list-group-item-action" > {item}</a>)) : null}
+              </div>
             )
           }
 
