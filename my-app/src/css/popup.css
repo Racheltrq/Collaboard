@@ -13,3 +13,12 @@ label{
 #popupJoinRoom{
 	cursor: pointer;
 }
+
+#JoinButton{
+	background-color: Transparent;
+	background-repeat:no-repeat;
+	border: none;
+	cursor:pointer;
+	overflow: hidden;
+	margin-left: 0;
+}

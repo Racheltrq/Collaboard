@@ -1,20 +1,33 @@
 import React from "react";
-import Popup from "reactjs-popup";
+import Modal from "react-responsive-modal";
 import './css/popup.css'
 
 
 class PopUp extends React.Component{
-	render(){
-		return(
-			<div>
-				<Popup trigger={<li className="button" id = "popupJoinRoom"> {this.props.name} </li>} modal>
+	state = {
+		open: false
+	};
 
+	onOpenModal = () => {
+		this.setState({ open: true });
+	};
+
+	onCloseModal = () => {
+		this.setState({ open: false });
+	};
+
+	render() {
+		const { open } = this.state;
+		return (
+			<div>
+				<a id = "JoinButton" onClick={this.onOpenModal}>Join</a>
+				<Modal open={open} onClose={this.onCloseModal} center>
 					<div>
-						<form action = "/home">
-							<label class = "row">
-								<p id = "input">Room id: </p>
-								<input type="text" name="usr" />
-								<br />
+						<form action="/home">
+							<label className="row">
+								<p id="input">Room id: </p>
+								<input type="text" name="usr"/>
+								<br/>
 							</label>
 
 							<label class = "row">
@@ -24,10 +37,9 @@ class PopUp extends React.Component{
 							<input type="submit" value="Submit" name = "login" id = "submit"/>
 						</form>
 					</div>
-				</Popup>
+				</Modal>
 			</div>
-
-			)
+		);
 	}
 }
 
