@@ -6,6 +6,8 @@ import Home from "./home"
 import File from "./file"
 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import CreateFile from "./createFile";
+import CreateFolder from "./createFolder"
 
 
 class App extends React.Component{
@@ -20,6 +22,8 @@ class App extends React.Component{
 			<Route path = "/" exact component = {Login} />
 			<Route path = "/home" exact component = {Home} />
 			<Route path = "/file" exact component = {File} />
+			<Route path = "/createFile" exact component = {CreateFile} />
+			<Route path = "/createFolder" exact component = {CreateFolder} />
 
 
 		</div>
