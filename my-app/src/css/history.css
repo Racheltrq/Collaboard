@@ -1,4 +1,4 @@
-#historyButton{
+#HistoryButton{
     border: solid;
     width: 45px;
     height: 45px;
@@ -10,4 +10,8 @@
 #text-H{
     font-size: 28px;
     margin-top: 3px;
+}
+
+#HistoryModal{
+    min-width: 200px;
 }
