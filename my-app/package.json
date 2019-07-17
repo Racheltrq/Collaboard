@@ -15,7 +15,6 @@
     "react-sidebar": "^3.0.2",
     "react-sketch": "^0.5.1",
     "react-sliding-pane": "^3.1.0",
-    "reactjs-popup": "^1.4.1",
     "sqlite3": "^4.0.9"
   },
   "scripts": {
