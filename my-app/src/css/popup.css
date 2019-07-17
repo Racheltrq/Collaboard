@@ -10,10 +10,6 @@ label{
 	min-width: 120px;
 }
 
-#popupJoinRoom{
-	cursor: pointer;
-}
-
 #JoinButton{
 	background-color: Transparent;
 	background-repeat:no-repeat;
