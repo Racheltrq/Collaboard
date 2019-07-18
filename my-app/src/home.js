@@ -46,7 +46,7 @@ class Home extends React.Component{
 						</ul>
 
 						<div id = "listItemButton">
-							<a href="/home" id="myButton">Logout</a>
+							<a href="/" id="myButton">Logout</a>
 						</div>
 				    
 					</div>
