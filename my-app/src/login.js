@@ -42,42 +42,47 @@ class Login extends React.Component{
 				
 				<h1 className = "header" class="font-italic" id = 'welcome'> Welcome to Collaboard!</h1>
 				<div className = "login" id = 'signUp'>
-					<h2>Sign up:</h2>
-					<form action = "/">
-					  <label class = "row">
-					    <p>Username: </p>
-					    <input type="text" name="usr"/>
-					    <br />
-					  </label>
-
-					  <label class = "row">
-					    <p>Password: </p>
-					    <input type="password" name="psw"/>
-					  </label>
-
-					  <label class = "row">
-					  	<p>Comfirm your password: </p>
-					    <input type="password" name="psw"/>
-					  </label>
-
-					  <input type="submit" value="Submit" name = "signup"/>
+					<h2 id = "headerSignUp">Sign up:</h2>
+					<form>
+						<div className="form-group">
+							<label htmlFor="exampleInputEmail1">Email address</label>
+							<input type="email" className="form-control" id="exampleInputEmail1"
+								   aria-describedby="emailHelp" placeholder="Enter email"/>
+								<small id="emailHelp" className="form-text text-muted">We'll never share your email with
+									anyone else.
+								</small>
+						</div>
+						<div className="form-group">
+							<label htmlFor="exampleInputPassword1">Password</label>
+							<input type="password" className="form-control" id="exampleInputPassword1"
+								   placeholder="Password"/>
+						</div>
+						<div className="form-group">
+							<label htmlFor="exampleInputPassword1">Confirm your password</label>
+							<input type="password" className="form-control" id="exampleInputPassword1"
+								   placeholder="Confirm your Password"/>
+						</div>
+						<button id = "submitButton" type="submit" className="btn btn-primary">Submit</button>
 					</form>
 				</div>
 
 				<div className = "login" id = 'login'>
-					<h2>Login:</h2>
-					<form action = "/home">
-					  <label class = "row">
-					    <p>Username: </p>
-					    <input type="text" name="usr" />
-					    <br />
-					  </label>
-
-					  <label class = "row">
-					    <p>Password: </p>
-					    <input type="password" name="psw"/>
-					  </label>
-					  <input type="submit" value="Submit" name = "login"/>
+					<h2 id = "headerSignUp">Login:</h2>
+					<form>
+						<div className="form-group">
+							<label htmlFor="exampleInputEmail1">Email address</label>
+							<input type="email" className="form-control" id="exampleInputEmail1"
+								   aria-describedby="emailHelp" placeholder="Enter email"/>
+							<small id="emailHelp" className="form-text text-muted">We'll never share your email with
+								anyone else.
+							</small>
+						</div>
+						<div className="form-group">
+							<label htmlFor="exampleInputPassword1">Password</label>
+							<input type="password" className="form-control" id="exampleInputPassword1"
+								   placeholder="Password"/>
+						</div>
+						<button id = "submitButton" type="submit" className="btn btn-primary">Submit</button>
 					</form>
 				</div>
 

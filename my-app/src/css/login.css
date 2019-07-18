@@ -40,6 +40,10 @@ input[type=password]{
     font-size:80px;
 }
 
+#headerSignUp{
+    margin-left: 35px;
+}
+
 #signUp{
     float: left;
     margin-top: 30px;
@@ -64,4 +68,8 @@ h2{
     margin-left: 10px;
 }
 
+#submitButton{
+    margin-left: 10px;
+    width: 200px;
+}
 
