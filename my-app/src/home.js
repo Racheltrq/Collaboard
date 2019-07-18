@@ -18,35 +18,38 @@ class Home extends React.Component{
 		return(
 			<div>
 				<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				  <a class="navbar-brand" href="/">Collaboard</a>
+					<a class="navbar-brand" href="/">Collaboard</a>
 
 
-				  <div class = "container-fluid" id="navbarSupportedContent">
-				    <ul class="navbar-nav mr-auto">
+					<div class = "container-fluid" id="navbarSupportedContent">
+						<ul class="navbar-nav mr-auto">
 
-				      <li class="nav-item active">
-				        <a class="nav-link" href="/home" id = "navBarHome">Home <span class="sr-only">(current)</span></a>
-				      </li>
+							<li class="nav-item active">
+								<a class="nav-link" href="/home" id = "navBarHome">Home <span class="sr-only">(current)</span></a>
+							</li>
 
-				      <Dropdown title = "New" content = "none"/>
+							<Dropdown title = "New" content = "none"/>
 
-					  <li class="nav-item active" id = 'navBarItemJoin'>
-					  	<PopUp name = "Join" />
-				      </li>
+							<li class="nav-item active" id = 'navBarItemJoin'>
+								<PopUp name = "Join" />
+							</li>
 
-				      <Dropdown title = "Folders" content = {folders}/>
+							<Dropdown title = "Folders" content = {folders}/>
 
-				      <li class="nav-item active" id = 'navBarItemStarred'>
-				        <a class="nav-link" href="/home">Starred <span class="sr-only">(current)</span></a>
-				      </li>
+							<li class="nav-item active" id = 'navBarItemStarred'>
+								<a class="nav-link" href="/home">Starred <span class="sr-only">(current)</span></a>
+							</li>
 
-				      <li class="nav-item active" id = 'navBarItemHelp'>
-					  	<Help name = "Help" />
-				      </li>
+							<li class="nav-item active" id = 'navBarItemHelp'>
+								<Help name = "Help" />
+							</li>
+						</ul>
 
-				    </ul>
+						<div id = "listItemButton">
+							<a href="/home" id="myButton">Logout</a>
+						</div>
 				    
-				  </div>
+					</div>
 				</nav>
 
 
