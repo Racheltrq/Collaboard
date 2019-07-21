@@ -18,7 +18,7 @@ class Home extends React.Component{
 		return(
 			<div>
 				<nav class="navbar navbar-expand-lg navbar-light bg-light">
-					<a class="navbar-brand" href="/">Collaboard</a>
+					<a class="navbar-brand" id = "Collaboard">Collaboard</a>
 
 
 					<div class = "container-fluid" id="navbarSupportedContent">

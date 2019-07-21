@@ -68,7 +68,7 @@ class Login extends React.Component{
 
 				<div className = "login" id = 'login'>
 					<h2 id = "headerSignUp">Login:</h2>
-					<form>
+					<form action = "/home">
 						<div className="form-group">
 							<label htmlFor="exampleInputEmail1">Email address</label>
 							<input type="email" className="form-control" id="exampleInputEmail1"
