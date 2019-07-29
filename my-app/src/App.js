@@ -5,7 +5,7 @@ import Login from "./login"
 import Home from "./home"
 import File from "./file"
 
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
 import CreateFile from "./createFile";
 import CreateFolder from "./createFolder"
 
