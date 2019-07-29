@@ -10,7 +10,7 @@ class CreateFile extends React.Component{
                 <form action = "/home">
                     <div className="form-group">
                         <label htmlFor="exampleInputEmail1">Filename:</label>
-                        <input type="email" className="form-control" id="exampleInputEmail1"
+                        <input type="filename" className="form-control" id="exampleInputEmail1"
                                aria-describedby="emailHelp" placeholder="Filename"/>
                         <small id="emailHelp" className="form-text text-muted">An id will be generated for your file.
                         </small>
