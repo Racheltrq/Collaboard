@@ -13,17 +13,13 @@ class File extends React.Component{
 	state = {
 		open: false,
 		penColor: 'black',
+		eraser: false,
 		tool: Tools.Pencil,
 		toolBox: ["Pencil", "Select", "Circle", "Rectangle", "Pan"]
 	};
 
 	handleChangeComplete = (color) => {
 		this.setState({ penColor: color.hex });
-	};
-
-	handleChangeTools = (item) => {
-		this.setState({tool: item});
-		console.log("ChosenTool: ", this.state.tool)
 	};
 
 	onOpenModal = () => {
@@ -50,10 +46,11 @@ class File extends React.Component{
 						<div id = "colorText">Color</div>
 					</button>
 
-					<button id = 'dropDownButton' onClick={()=>this.setState({tool: Tools.Pencil})}> Pencil</button>
-					<button id = 'dropDownButton' onClick={()=>this.setState({tool: Tools.Select})}> Select</button>
-					<button id = 'dropDownButton' onClick={()=>this.setState({tool: Tools.Circle})}> Circle</button>
-					<button id = 'dropDownButton' onClick={()=>this.setState({tool: Tools.Rectangle})}> Rectangle</button>
+					<button id = 'dropDownButton' onClick={()=>this.setState({tool: Tools.Pencil, eraser: false})}> Pencil</button>
+					<button id = 'dropDownButton' onClick={()=>this.setState({tool: Tools.Pencil, eraser: true})}> Eraser</button>
+					<button id = 'dropDownButton' onClick={()=>this.setState({tool: Tools.Select, eraser: false})}> Select</button>
+					<button id = 'dropDownButton' onClick={()=>this.setState({tool: Tools.Circle, eraser: false})}> Circle</button>
+					<button id = 'dropDownButton' onClick={()=>this.setState({tool: Tools.Rectangle, eraser: false})}> Rectangle</button>
 					<button id = 'dropDownButton' onClick={()=>this.setState({tool: Tools.Pan})}> Pan</button>
 
 
@@ -71,7 +68,7 @@ class File extends React.Component{
 					/>
 				</Modal>
 
-				<SketchField width='1024px' height='2000px' tool={tool} lineColor={this.state.penColor} lineWidth={3} backgroundColor= 'white'/>
+				<SketchField width='1024px' height='2000px' tool={tool} lineColor={ this.state.eraser ? "white" : this.state.penColor } lineWidth={3} backgroundColor= 'white'/>
 				<img src = {voicePic} id = 'voiceButton'/>
 				<Chat />
 			</div>
