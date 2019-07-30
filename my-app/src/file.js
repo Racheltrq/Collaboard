@@ -52,11 +52,7 @@ class File extends React.Component{
 					<button id = 'dropDownButton' onClick={()=>this.setState({tool: Tools.Circle, eraser: false})}> Circle</button>
 					<button id = 'dropDownButton' onClick={()=>this.setState({tool: Tools.Rectangle, eraser: false})}> Rectangle</button>
 					<button id = 'dropDownButton' onClick={()=>this.setState({tool: Tools.Pan})}> Pan</button>
-
-
-
-
-					{console.log("Chosen Tool: ", this.state.tool)}
+					
 
 				</div>
 
