@@ -15,9 +15,9 @@ class CreateFolder extends React.Component{
 
         ];
         return(
-            <div class = "row">
+            <div>
                 <h1 id = "createFolderHeader">Create Your own folder</h1>
-                <div class = "row">
+                <div class="row" id = "createFolderDiv">
                     <div id = "folderFormDiv">
                         <form action = "/home">
                             <div className="form-group">

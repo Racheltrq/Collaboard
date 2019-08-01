@@ -10,3 +10,25 @@
 #emailHelp{
     margin-left: 12px;
 }
+
+#createFileDiv{
+    margin: 0 auto;
+    width: 900px;
+    margin-top: 50px;
+}
+
+#createFileHeader{
+    margin: 0 auto;
+    width: 400px;
+    margin-top: 20px;
+}
+
+#createFileForm{
+    width: 400px;
+    margin-right: 100px;
+}
+
+#checkboxFile{
+    width: 400px;
+}
+

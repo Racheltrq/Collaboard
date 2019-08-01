@@ -1,17 +1,21 @@
 #createFolderHeader{
-    margin-left: 20px;
+    margin: 0 auto;
+    width: 450px;
+    margin-top: 20px;
+}
+
+#createFolderDiv{
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 900px;
 }
 
 #folderFormDiv{
-    width: 500px;
-    margin-left: 30px;
-    margin-top: 50px;
+    width: 400px;
+    margin-right: 100px;
 }
 
 #checkboxDiv{
-    margin-left: 30px;
-    margin-top: 80px;
     width: 400px;
-    height: 400px;
 }
 
