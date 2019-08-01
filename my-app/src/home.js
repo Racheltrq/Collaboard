@@ -17,7 +17,7 @@ class Home extends React.Component{
 	render(){
 		return(
 			<div>
-				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default">
 					<a class="navbar-brand" id = "Collaboard">Collaboard</a>
 
 
