@@ -1,0 +1,21 @@
+#createFolderHeader{
+    margin: 0 auto;
+    width: 450px;
+    margin-top: 20px;
+}
+
+#createFolderDiv{
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 900px;
+}
+
+#folderFormDiv{
+    width: 400px;
+    margin-right: 100px;
+}
+
+#checkboxDiv{
+    width: 400px;
+}
+

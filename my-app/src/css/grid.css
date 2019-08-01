@@ -1,0 +1,19 @@
+#text{
+    text-decoration: none;
+    color: black;
+}
+
+#fileDiv{
+    width: 206px;
+    height: 240px;
+    margin-left: 30px;
+    margin-bottom: 25px;
+    background-color: #EEDBD7;
+    border-radius: 3px;
+}
+
+#img{
+    width: 200px;
+    height: 200px;
+    margin: 4px;
+}

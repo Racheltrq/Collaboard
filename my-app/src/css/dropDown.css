@@ -1,0 +1,15 @@
+#dropDownMenuLeft{
+    text-align: center;
+    width: 40px;
+    margin-right: 32px;
+    margin-top: 1px;
+    cursor: pointer;
+}
+
+#listGroup{
+    list-style-type: none;
+}
+
+#dropDownItem{
+    margin-left: 0;
+}

@@ -1,0 +1,81 @@
+body{
+    margin: 10px;
+    background-color: #00a790;
+}
+
+input[type=text], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin-left: 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type=submit] {
+    width: 25%;
+    height: 38px;
+    line-height: 10px;
+    background-color: #007065;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+
+button[type=submit]:hover, button[type=submit]:active, button[type=submit]:focus{
+    background-color: #f5c181 !important;
+    border: none;
+}
+
+
+
+input[type=password]{
+    width: 370px;
+    margin-left: 10px;
+}
+
+.login{
+    width: 50%;
+    height: 100%;
+}
+
+#welcome{
+    font-size:80px;
+}
+
+#headerSignUp{
+    margin-left: 35px;
+}
+
+#signUp{
+    float: left;
+    margin-top: 30px;
+
+}
+
+#login{
+    float: left;
+    margin-top: 35px;
+
+}
+
+form{
+    margin-left: 30px;
+}
+
+p{
+    margin-top: 12px;
+}
+
+h2{
+    margin-left: 10px;
+}
+
+#submitButton{
+    margin-left: 10px;
+    width: 200px;
+}
+

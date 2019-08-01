@@ -1,0 +1,17 @@
+#HistoryButton{
+    border: solid;
+    width: 45px;
+    height: 45px;
+    margin-left: 8px;
+    float: right;
+    cursor: pointer;
+}
+
+#text-H{
+    font-size: 28px;
+    margin-top: 3px;
+}
+
+#HistoryModal{
+    min-width: 200px;
+}
