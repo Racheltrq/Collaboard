@@ -1,7 +1,7 @@
 #filenameDiv{
     height: 70px;
     width: 1600px;
-    background-color: white;
+    background-color: #b1e1d1;
 }
 
 #filename{
@@ -93,7 +93,7 @@ button:focus {outline:0;}
     border-width: thin;
 }
 
-#dropDownButton{
+.dropDownButton{
     width: 125px;
     max-height: 38px;
     margin: 15px;

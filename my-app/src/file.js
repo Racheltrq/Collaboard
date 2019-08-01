@@ -46,13 +46,13 @@ class File extends React.Component{
 						<div id = "colorText">Color</div>
 					</button>
 
-					<button id = 'dropDownButton' onClick={()=>this.setState({tool: Tools.Pencil, eraser: false})}> Pencil</button>
-					<button id = 'dropDownButton' onClick={()=>this.setState({tool: Tools.Pencil, eraser: true})}> Eraser</button>
-					<button id = 'dropDownButton' onClick={()=>this.setState({tool: Tools.Select, eraser: false})}> Select</button>
-					<button id = 'dropDownButton' onClick={()=>this.setState({tool: Tools.Circle, eraser: false})}> Circle</button>
-					<button id = 'dropDownButton' onClick={()=>this.setState({tool: Tools.Rectangle, eraser: false})}> Rectangle</button>
-					<button id = 'dropDownButton' onClick={()=>this.setState({tool: Tools.Pan})}> Pan</button>
-					
+					<button class = 'dropDownButton' onClick={()=>this.setState({tool: Tools.Pencil, eraser: false})}> Pencil</button>
+					<button class = 'dropDownButton' onClick={()=>this.setState({tool: Tools.Pencil, eraser: true})}> Eraser</button>
+					<button class = 'dropDownButton' onClick={()=>this.setState({tool: Tools.Select, eraser: false})}> Select</button>
+					<button class = 'dropDownButton' onClick={()=>this.setState({tool: Tools.Circle, eraser: false})}> Circle</button>
+					<button class = 'dropDownButton' onClick={()=>this.setState({tool: Tools.Rectangle, eraser: false})}> Rectangle</button>
+					<button class = 'dropDownButton' onClick={()=>this.setState({tool: Tools.Pan})}> Pan</button>
+
 
 				</div>
 
