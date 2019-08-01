@@ -20,7 +20,7 @@ class PopUp extends React.Component{
 		const { open } = this.state;
 		return (
 			<div>
-				<a id = "JoinButton" onClick={this.onOpenModal}>Join</a>
+				<a id = "joinButton" onClick={this.onOpenModal}>Join</a>
 				<Modal open={open} onClose={this.onCloseModal} center>
 					<div>
 						<form action="/home">
