@@ -57,10 +57,10 @@ class Home extends React.Component{
 					<div class = "row" id = 'upperRightButtons'>
 
 						<div class = "row" id = 'gridToListView'>
-							<div id = 'gridTopLeft'/>
-							<div id = 'gridTopRight'/>
-							<div id = 'gridBotLeft'/>
-							<div id = 'gridBotRight'/>
+							<div class = 'gridTopLeft'/>
+							<div class = 'gridTopRight'/>
+							<div class = 'gridBotLeft'/>
+							<div class = 'gridBotRight'/>
 
 						</div>
 						<div class = "line" id = 'gridToListView'>

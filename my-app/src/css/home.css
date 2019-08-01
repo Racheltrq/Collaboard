@@ -45,7 +45,7 @@
     cursor: pointer;
 }
 
-#gridTopLeft{
+.gridTopLeft{
     width: 15px;
     height: 15px;
     margin-left: 3px;
@@ -53,7 +53,7 @@
     border: solid;
 }
 
-#gridTopRight{
+.gridTopRight{
     width: 15px;
     height: 15px;
     margin-left: 2px;
@@ -61,14 +61,14 @@
     border: solid;
 }
 
-#gridBotLeft{
+.gridBotLeft{
     width: 15px;
     height: 15px;
     margin-left: 3px;
     border: solid;
 }
 
-#gridBotRight{
+.gridBotRight{
     width: 15px;
     height: 15px;
     margin-left: 2px;
