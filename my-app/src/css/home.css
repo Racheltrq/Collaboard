@@ -15,7 +15,7 @@
 }
 
 .navbar-default{
-    background-color: #b1e1d1 !important;
+    background-color: #d1e8e2 !important;
     background-image: none;
     background-repeat: no-repeat;
 }
@@ -103,7 +103,7 @@
     background:-ms-linear-gradient(top, #8bb2f7 5%, #5184c2 100%);
     background:linear-gradient(to bottom, #8bb2f7 5%, #5184c2 100%);
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#8bb2f7', endColorstr='#5184c2',GradientType=0);
-    background-color:#8bb2f7;
+    background-color:#123c69;
     -moz-border-radius:10px;
     -webkit-border-radius:10px;
     border-radius:10px;
