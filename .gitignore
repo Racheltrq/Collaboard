@@ -455,3 +455,4 @@ my-app/backend/node_modules/bignumber.js/bignumber.min.js
 my-app/backend/node_modules/bignumber.js/bignumber.js.map
 my-app/backend/node_modules/bignumber.js/bignumber.js
 my-app/backend/node_modules/bignumber.js/bignumber.d.ts
+node_modules/
