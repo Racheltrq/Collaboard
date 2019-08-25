@@ -1,4 +1,5 @@
 const express = require('express');
+var bodyParser = require('body-parser')
 const app = express();
 const mysql = require('mysql');
 var conn = mysql.createConnection({
@@ -10,57 +11,56 @@ var conn = mysql.createConnection({
 
 conn.connect();
 
+app.use(function(req, res, next) { res.header("Access-Control-Allow-Origin", "*"); res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept"); next(); });
+
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
+
 
 app.get("/", (req, res) => {
 	console.log("Responding to root route...")
 	res.send("Hello from root")
 })
 
-app.get("/users", (req, res) => {
-	res.header("Content-Type",'application/json');
-	var s = {
-		"id": "0001",
-		"type": "donut",
-		"name": "Cake",
-		"ppu": 0.55,
-		"batters":
-			{
-				"batter":
-					[
-						{ "id": "1001", "type": "Regular" },
-						{ "id": "1002", "type": "Chocolate" },
-						{ "id": "1003", "type": "Blueberry" },
-						{ "id": "1004", "type": "Devil's Food" }
-					]
-			},
-		"topping":
-			[
-				{ "id": "5001", "type": "None" },
-				{ "id": "5002", "type": "Glazed" },
-				{ "id": "5005", "type": "Sugar" },
-				{ "id": "5007", "type": "Powdered Sugar" },
-				{ "id": "5006", "type": "Chocolate with Sprinkles" },
-				{ "id": "5003", "type": "Chocolate" },
-				{ "id": "5004", "type": "Maple" }
-			]
-	}
-	console.log(typeof s)
-	console.log(JSON.stringify(s))
-	var st = JSON.stringify(s)
-	console.log(typeof st)
-  	res.send(st)
-	
-})
+app.post("/users", (req, res) => {
+	//res.header("Content-Type",'application/json');
 
-app.get('/test', function(request, response){
-	conn.query('select * from Users', function(error, results){
+	//console.log(typeof s)
+	//console.log(JSON.stringify(s))
+	//var st = JSON.stringify(s)
+	//console.log(typeof st)
+  	//res.send(st)
+
+	console.log("log:", req.body)
+
+	conn.query('select Email from Users', function(error, results){
 		if ( error ){
-			response.status(400).send('Error in database operation');
+			res.status(400).send('Error in database operation');
+			console.log("Fail")
 		} else {
-			response.send(results);
+			let emailExists = false;
+			for(let i = 0; i < results.length; i++) {
+				console.log("Compare:", results[i].Email, req.body.email)
+				if (results[i].Email === req.body.email) {
+					emailExists = true;
+					res.status(400).send('login failed');
+					break;
+				}
+			}
+			if(emailExists === false) {
+				var sql = "INSERT INTO Users VALUES ?";
+				var values = [
+					[req.body.email, req.body.psw]
+				]
+				conn.query(sql, [values],function (err, result) {
+					if (err) throw err;
+					console.log("1 record inserted");
+				});
+			}
 		}
 	});
-});
+	
+})
 
 app.listen(3003, ()=>{
 	console.log("Server is listening...")

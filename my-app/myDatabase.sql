@@ -1,5 +1,5 @@
 CREATE TABLE Users(
-    Username varchar(20) NOT NULL UNIQUE,
+    Email varchar(25) NOT NULL UNIQUE,
     Password varchar(30) NOT NULL,
-    PRIMARY KEY (Username)
+    PRIMARY KEY (Email)
 );
